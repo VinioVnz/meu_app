@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meu_app/Botao.dart';
+import 'package:meu_app/exercicios/Loja.dart';
 import 'package:meu_app/statefull/Contador.dart';
 import 'package:meu_app/statefull/RandomNumber.dart';
 import 'package:meu_app/statefull/darkmode.dart';
@@ -52,5 +53,5 @@ void main(){
   ); */
 
   //runApp(Darkmode());
-  runApp(RandomNumber());
+  runApp(Loja());
 }
