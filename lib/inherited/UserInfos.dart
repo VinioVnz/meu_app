@@ -8,7 +8,8 @@ class UserInfos extends StatelessWidget {
   Widget build(BuildContext context) {
     return UserData(
       username: "veNeZe",
-      child: Scaffold(
+      child: MaterialApp(
+        home: Scaffold(
         appBar: AppBar(title: Text("Perfil de usuário"),),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -18,6 +19,7 @@ class UserInfos extends StatelessWidget {
           ],
         ),
       ),
+      )
     );
   }
 

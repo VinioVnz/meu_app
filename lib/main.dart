@@ -56,5 +56,6 @@ void main(){
   //runApp(Darkmode());
   //runApp(Loja());
 
-  runApp(UserInfos());
+  runApp(
+    UserInfos());
 }
