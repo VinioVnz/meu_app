@@ -57,5 +57,7 @@ void main(){
   //runApp(Loja());
 
   runApp(
-    UserInfos());
+    Loja());
 }
+
+//atalho = st e ai so da autocomplete
