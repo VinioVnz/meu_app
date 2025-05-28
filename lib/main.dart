@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meu_app/Botao.dart';
+import 'package:meu_app/MaterialApp/MyMaterial.dart';
 import 'package:meu_app/exercicios/Loja.dart';
+import 'package:meu_app/exercicios/Welcome.dart';
 import 'package:meu_app/inherited/UserInfos.dart';
 import 'package:meu_app/statefull/Contador.dart';
 import 'package:meu_app/statefull/RandomNumber.dart';
@@ -56,8 +58,11 @@ void main(){
   //runApp(Darkmode());
   //runApp(Loja());
 
-  runApp(
+/*   runApp(
     Loja());
+} */
+
+runApp(Welcome());
 }
 
 //atalho = st e ai so da autocomplete
