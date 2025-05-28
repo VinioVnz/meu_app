@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
 
@@ -14,6 +14,7 @@ class _WelcomeState extends State<Welcome> {
       title: "App de boas vindas",
       home: Home(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(textTheme:GoogleFonts.montserratTextTheme()),
     );
   }
 }
@@ -33,8 +34,12 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      theme: ThemeData(textTheme:GoogleFonts.montserratTextTheme()),
+      darkTheme: ThemeData.dark().copyWith(
+      textTheme: GoogleFonts.montserratTextTheme(
+      ThemeData.dark().textTheme,
+    ),
+  ),
       home: Scaffold(
         appBar: AppBar(title: Text("App"),backgroundColor: Colors.cyan,),
         body: Center(
@@ -95,7 +100,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         bottomNavigationBar: BottomAppBar(
-          child: Padding(padding: EdgeInsets.all(16), child: Text("Proxima Página"),),
+          child: Padding(padding: EdgeInsets.all(16), child: Text("Próxima Página"),),
         ),
       ),
     );
