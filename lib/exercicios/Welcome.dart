@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
 
@@ -14,7 +14,6 @@ class _WelcomeState extends State<Welcome> {
       title: "App de boas vindas",
       home: Home(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(textTheme:GoogleFonts.montserratTextTheme()),
     );
   }
 }
@@ -28,18 +27,14 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   bool isDark = false;
-  void switchTheme() {}
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
-      theme: ThemeData(textTheme:GoogleFonts.montserratTextTheme()),
-      darkTheme: ThemeData.dark().copyWith(
-      textTheme: GoogleFonts.montserratTextTheme(
-      ThemeData.dark().textTheme,
-    ),
-  ),
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(title: Text("App"),backgroundColor: Colors.cyan,),
         body: Center(
@@ -49,6 +44,7 @@ class _HomeState extends State<Home> {
               Text("Bem vindo!", style: TextStyle(fontSize: 24)),
               SizedBox(height: 100,),
               SwitchListTile(
+                activeColor: Colors.cyan,
                 value: isDark,
                 title: Text("Mudar de tema", style: TextStyle(fontSize: 16)),
                 secondary:
@@ -64,43 +60,54 @@ class _HomeState extends State<Home> {
         ),
         drawer: Drawer(
           child: ListView(
+            
             children: [
               DrawerHeader(child: Text("Menu", style: TextStyle(fontSize: 18))),
               ListTile(
+                
                 title: Text(
                   "Home",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
+                leading: Icon(Icons.home),
               ),
               ListTile(
                 title: Text(
                   "Produtos",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
+                leading: Icon(Icons.shopping_bag),
               ),
               ListTile(
                 title: Text(
                   "Serviços",
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold),                  
                 ),
+                leading: Icon(Icons.handyman),
               ),
               ListTile(
                 title: Text(
                   "Contatos",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
+                leading: Icon(Icons.contact_mail),
               ),
               ListTile(
                 title: Text(
                   "Sobre Nós",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
+                leading: Icon(Icons.group),
+
               ),    
             ],
           ),
         ),
         bottomNavigationBar: BottomAppBar(
-          child: Padding(padding: EdgeInsets.all(16), child: Text("Próxima Página"),),
+          
+          child: Padding(padding: EdgeInsets.all(16), child: Center(
+            child: Text("Footer",style: TextStyle(fontSize: 18),),
+          )),
         ),
       ),
     );
