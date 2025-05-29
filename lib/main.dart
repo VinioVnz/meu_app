@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:meu_app/Botao.dart';
+import 'package:meu_app/Cupertino/MyCupertino.dart';
 import 'package:meu_app/MaterialApp/MyMaterial.dart';
 import 'package:meu_app/exercicios/Loja.dart';
 import 'package:meu_app/exercicios/Welcome.dart';
@@ -62,7 +65,16 @@ void main(){
     Loja());
 } */
 
-runApp(Welcome());
+//runApp(Welcome());
+
+//runApp(MyCupertino());
+//como definir qual widget usar?
+
+if(Platform.isAndroid){
+  runApp(MyMaterial());
+} else {
+  runApp(MyCupertino());
+}
 }
 
 //atalho = st e ai so da autocomplete
