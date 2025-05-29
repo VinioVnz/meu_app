@@ -23,21 +23,3 @@ o que o Scaffold oferece:
 -> body(conteudo principal da tela)
 
 
-CUPERTINO
-
-o cupertino no flutter é o conjunto de widgets que reproduzem fielmente o 
-visual e o comportamento do iOS(apple), seguindo as diretrizes de HIG(Human Interface Guidelines) da Apple
-
-objetivos do cupertino
--> recriar componentes nativos do iOS
--> fornecer uma experiência visual consistente para usuários iphone/ipad
--> substituir widgets do Material por equivalentes no iOS
-
-CupertinoPageScaffold
-é um widget do cupertino usado para criar interfaces no estilo iOS
-ele fornece uma estrutura básica de uma página no estilo iOS, similar ao scaffold
-
-objetivos
--> criar paginas com visual nativo iOS
--> gerenciar nativamente o SafeArea(iOS)
--> permitir navegação fluida no estilo cupertino
