@@ -108,7 +108,8 @@ class HomePage extends StatelessWidget {
         //padding: EdgeInsets.all(15),
         child: Text("Rodapé do app", 
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 16),),
+        style: TextStyle(fontSize: 16),
+        ),
       ),
     );
   }
