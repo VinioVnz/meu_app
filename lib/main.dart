@@ -12,6 +12,7 @@ import 'package:meu_app/statefull/RandomNumber.dart';
 import 'package:meu_app/statefull/darkmode.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
 import 'package:meu_app/stateless/User.dart';
+import 'package:meu_app/widgetsLayout/LayoutApp.dart';
 
 /* void main() {
   runApp(Container(
@@ -70,11 +71,13 @@ void main(){
 //runApp(MyCupertino());
 //como definir qual widget usar?
 
-if(Platform.isAndroid){
+/* if(Platform.isAndroid){
   runApp(MyMaterial());
 } else {
   runApp(MyCupertino());
 }
+} */
+runApp(LayoutApp());
 }
 
 //atalho = st e ai so da autocomplete
