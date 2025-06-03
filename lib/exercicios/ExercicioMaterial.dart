@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ExercicioMaterial extends StatefulWidget {
@@ -17,6 +16,7 @@ class _ExercicioMaterialState extends State<ExercicioMaterial> {
       title: "Exercício Material App",
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
       themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
       home: HomePage(
         toggleTheme: () {

@@ -3,15 +3,20 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:meu_app/Botao.dart';
 import 'package:meu_app/Cupertino/MyCupertino.dart';
+import 'package:meu_app/Debug.dart';
 import 'package:meu_app/MaterialApp/MyMaterial.dart';
 import 'package:meu_app/exercicios/Loja.dart';
 import 'package:meu_app/exercicios/Welcome.dart';
 import 'package:meu_app/inherited/UserInfos.dart';
+import 'package:meu_app/navegacao/Routes.dart';
+import 'package:meu_app/navegacao/Tela1.dart';
 import 'package:meu_app/statefull/Contador.dart';
 import 'package:meu_app/statefull/RandomNumber.dart';
 import 'package:meu_app/statefull/darkmode.dart';
 import 'package:meu_app/stateless/SemEstado.dart';
 import 'package:meu_app/stateless/User.dart';
+import 'package:meu_app/usandoAssets/Fonts.dart';
+import 'package:meu_app/usandoAssets/Imagem.dart';
 import 'package:meu_app/widgetsLayout/LayoutApp.dart';
 
 /* void main() {
@@ -77,7 +82,12 @@ void main(){
   runApp(MyCupertino());
 }
 } */
-runApp(LayoutApp());
+//runApp(LayoutApp());
+//runApp(Fonts());
+//runApp(Imagem());
+//runApp(const MaterialApp(home: Debug(numeroMaximo: 10),));
+//runApp(MaterialApp(home: Tela1(),));
+runApp(Routes());
 }
 
 //atalho = st e ai so da autocomplete

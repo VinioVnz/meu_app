@@ -11,6 +11,7 @@ class LayoutApp extends StatelessWidget {
     return const MaterialApp(
       title: "Widgets de layout",
       home: MontandoTela(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
