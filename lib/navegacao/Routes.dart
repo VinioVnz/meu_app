@@ -9,6 +9,7 @@ class Routes extends StatelessWidget {
   @override
   Widget build(context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/' : (context) => const Tela1(),

@@ -19,7 +19,7 @@ class Tela1 extends StatelessWidget {
             /* Navigator.push(context, MaterialPageRoute(
               builder: (context) => const Tela2())
             ); */
-            Navigator.pushNamed(context, '/tela2');
+            Navigator.pushReplacementNamed(context, '/tela2');
             
           },
         ),
